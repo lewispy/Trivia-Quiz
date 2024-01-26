@@ -24,7 +24,7 @@ class UserInterface:
 		self.score.grid(row=0, column=1, pady=10)
 
 		self.canvas = Canvas(width=634, height=303, highlightthickness=0)
-		self.BG_IMAGE = PhotoImage(file="Trivia bg 3.png")
+		self.BG_IMAGE = PhotoImage(file="Trivia bg.png")
 		self.canvas.create_image(317, 151, image=self.BG_IMAGE)
 		self.qu_text = self.canvas.create_text(
 			300, 151,

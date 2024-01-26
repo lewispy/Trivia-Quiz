@@ -14,8 +14,8 @@ class Quiz:
         self.answer = None
 
     def quiz_prompt(self, i):
-        print(f"Q{i+1}: {self.questions[i].text}")
-        print(f"{self.u_scores}/{self.q_count}")
+        # print(f"Q{i+1}: {self.questions[i].text}")
+        # print(f"{self.u_scores}/{self.q_count}")
         question = self.questions[i].text
         return question
 
@@ -30,8 +30,8 @@ class Quiz:
         self.q_count += 1
 
     def __check_answer(self, i):
-        print(f"User answer: {self.answer}")
-        print(f"Answer: {self.questions[i].answer}")
+        # print(f"User answer: {self.answer}")
+        # print(f"Answer: {self.questions[i].answer}")
         if self.answer == self.questions[i].answer:
             self.u_scores += 1
         else:
