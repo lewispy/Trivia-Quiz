@@ -5,4 +5,3 @@ from gui import UserInterface
 quiz = Quiz()
 
 ui = UserInterface(quiz)
-=
